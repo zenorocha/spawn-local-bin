@@ -1,15 +1,17 @@
-var path = require('path');
+var path  = require('path');
 var spawn = require('child_process').spawn;
 
 module.exports = function(cmd, args, cwd) {
-    this.cwd = cwd || process.cwd();
+    this.args = args || [];
+    this.cmd  = cmd || '';
+    this.cwd  = cwd || process.cwd();
 
     // Append the .cmd extension to the command call on Windows
     if (cmd && process.platform.match('/^win/')) {
         cmd = cmd + '.cmd';
     }
 
-    return spawn(cmd, args, {
+    return spawn(this.cmd, this.args, {
         cwd: this.cwd,
         stdio: 'inherit'
     });
