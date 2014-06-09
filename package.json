@@ -2,6 +2,10 @@
   "name": "spawn-local-bin",
   "version": "0.1.0",
   "description": "A child_process.spawn wrapper that inherits stdio and adds local bin's to the process.env PATH",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenorocha/spawn-local-bin"
+  },
   "main": "index.js",
   "author": "Zeno Rocha <hi@zenorocha.com>",
   "license": "MIT"
