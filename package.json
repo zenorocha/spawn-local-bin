@@ -1,0 +1,8 @@
+{
+  "name": "win-spawn-cmd",
+  "version": "0.0.0",
+  "description": "A child_process.spawn wrapper that inherits stdio and adds local bin's to the process.env PATH",
+  "main": "index.js",
+  "author": "Zeno Rocha <hi@zenorocha.com>",
+  "license": "MIT"
+}
