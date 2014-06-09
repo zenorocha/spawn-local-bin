@@ -8,7 +8,7 @@ module.exports = function(cmd, args, cwd) {
 
     // Append the .cmd extension to the command call on Windows
     if (cmd && process.platform.match('/^win/')) {
-        cmd = cmd + '.cmd';
+        this.cmd = this.cmd + '.cmd';
     }
 
     return spawn(this.cmd, this.args, {
