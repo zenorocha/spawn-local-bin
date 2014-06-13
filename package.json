@@ -1,6 +1,6 @@
 {
   "name": "spawn-local-bin",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Yet another spawn wrapper.",
   "repository": {
     "type": "git",
